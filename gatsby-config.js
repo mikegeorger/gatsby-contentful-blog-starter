@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby BC + Contenful`,
+    description: `BC Test`,
+    author: `@gje4`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `86kx8fpc8n8m`,
+        accessToken: `3aqS3lZokdN5fRDG6xiHHVduFEMyuAGyO4ZPuyG3S4E`,
       },
     },
     `gatsby-transformer-sharp`,
